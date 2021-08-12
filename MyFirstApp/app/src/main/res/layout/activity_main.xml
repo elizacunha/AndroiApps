@@ -13,6 +13,7 @@
         android:layout_marginTop="16dp"
         android:hint="@string/button_send"
         android:onClick="sendMessage"
+        android:text="@string/button_send"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
