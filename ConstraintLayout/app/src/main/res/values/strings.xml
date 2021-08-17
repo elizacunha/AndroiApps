@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Constraint Layout</string>
+    <string name="button_name">Botão</string>
+    <string name="text_name">Texto Qualquer</string>
+</resources>

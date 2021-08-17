@@ -17,12 +17,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sortearNumero(View view){
-
         TextView texto = findViewById(R.id.textoResultado);
 
         int numero = new Random().nextInt(11);
 
-        texto.setText( "Número: " + numero );
+        texto.setText(new StringBuilder().append(getResources().getString(R.string.numero_sorteado)).append(numero).toString());
+
 
     }
 
