@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">Constraint Layout</string>
-    <string name="button_name">Botão</string>
-    <string name="text_name">Texto Qualquer</string>
+    <string name="txtTituloNoticia_1">Ribeirão Preto entra no 3º dia com a qualidade do ar ruim</string>
+    <string name="txtNoticia_1">Ribeirão Preto está no terceiro dia consecutivo com a qualidade do ar ruim, segundo a Cetesb (Companhia Ambiental de São Paulo).
+        Nesta quarta-feira (18), às 7h, o índice estava em 104 para o poluente MP2,5, que são Partículas Inaláveis Finas resultante  de poeiras, fumaças de
+        queimadas e todo tipo de material sólido e líquido que se mantém suspenso na atmosfera por causa de seu pequeno tamanho.
+        Na segunda-feira (16) e terça-feira (17), Ribeirão apresentou a pior qualidade do ar no estado de São Paulo.
+        Nesta quarta, além de Ribeirão, a qualidade do ar também é considerada ruim em São José do Rio Preto e Catanduva, no Norte do estado,
+        Santa Gertrudes, na região central, e Osasco, na Região Metropolitana de São Paulo.
+        A poluição do ar elevada exige cuidados redobrados com idosos, crianças e pessoas com doenças pulmonares e cardiovasculares.</string>
+    <string name="txtAutorNoticia_1">ACIDADEON/RIBEIRAO</string>
+    <string name="txtTituloNoticia_2">Confira a previsão do tempo nesta quarta-feira em Ribeirão Preto</string>
+    <string name="txtNoticia_2">Ribeirão Preto tem previsão de sol com algumas nuvens e máxima de 36°C nesta quarta-feira (18). A mínima deve ser de 16°C.
+        Caso a máxima prevista se confirmar, será o dia mais quente do ano na cidade em pleno inverno.
+        Segundo o Climatempo, não há probabilidade de chuva para quarta e a umidade relativa do ar varia entre 15% e 40%.</string>
 </resources>
