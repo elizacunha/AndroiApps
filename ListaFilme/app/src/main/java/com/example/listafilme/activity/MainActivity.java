@@ -1,13 +1,19 @@
 package com.example.listafilme.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.example.listafilme.R;
 import com.example.listafilme.adapter.AdapterFilme;
+import com.example.listafilme.listener.RecyclerItemClickListener;
 import com.example.listafilme.model.Filme;
 
 import java.util.ArrayList;
@@ -35,13 +41,33 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);
+        recyclerView.addItemDecoration(new DividerItemDecoration(getApplicationContext(), LinearLayout.VERTICAL));
         recyclerView.setAdapter(filmeAdapterFilme);
+
+        // Configurar o evento click
+        recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getApplicationContext(), recyclerView,
+                new RecyclerItemClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+                        Toast.makeText(getApplicationContext(),listaFilmes.get(position).getTituloFilme(), Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onLongItemClick(View view, int position) {
+                        Toast.makeText(getApplicationContext(),listaFilmes.get(position).toString(), Toast.LENGTH_LONG).show();
+                    }
+
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                    }
+                }));
     }
 
     public void criarFilmes() {
         Filme novoFilme = new Filme("O Silêncio dos Inocentes","Suspense","1991");
         listaFilmes.add(novoFilme);
-        novoFilme = new Filme("Seven - Os Sete Crimes Capitais","Policial","1995");
+        novoFilme = new Filme("Seven - Os 7 Crimes Capitais","Policial","1995");
         listaFilmes.add(novoFilme);
 
         novoFilme = new Filme("Star Wars - Uma Nova Esperança","Ficção Científica","1977");
