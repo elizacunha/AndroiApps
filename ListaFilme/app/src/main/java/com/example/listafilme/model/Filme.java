@@ -1,7 +1,5 @@
 package com.example.listafilme.model;
 
-import androidx.annotation.NonNull;
-
 public class Filme {
     private String tituloFilme;
     private String generoFilme;
